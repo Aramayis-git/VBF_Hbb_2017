@@ -1,0 +1,21 @@
+Instalation
+
+1.$ mkdir VBF_Hbb_2017_18
+2.$ git init
+3.$ git clone https://github.com/CMSVBFHbb/VBF_Hbb_2017_18/new/master
+
+
+eddit, add, remove
+
+4.$ #creating/editing <file>
+5.$ git add <file>
+6.$ git commit -m "coment in your change"
+7.$ git remote add proc https://github.com/CMSVBFHbb/VBF_Hbb_2017_18/new/master
+8.$ vim .git/config  
+#edititng
+[remote "proc"]
+        url = ssh://git@github.com/CERNCMS18/VBF_Hbb_2017_18
+        fetch = +refs/heads/*:refs/remotes/pos/*
+[remote "origin"]
+        url = ssh: //git@github.com/CERNCMS18/VBF_Hbb_2017_18/
+        fetch = +refs/heads/*:refs/remotes/tutu/*
