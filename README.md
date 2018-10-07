@@ -1,9 +1,10 @@
 
 
-Instalation for git
+# Instalation for git
+
 $ git clone ssh://git@github.com/CMSVBFHbb1718/VBF_Hbb_2017_18
 
-#eddit, add, remove files
+# eddit, add, remove files
 $ #creating/editing <file>
 $ git rm <file>
 #you can see your change 
