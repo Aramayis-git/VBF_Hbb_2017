@@ -2,20 +2,32 @@ Instalation
 
 1.$ mkdir VBF_Hbb_2017_18
 2.$ git init
-3.$ git clone https://github.com/CMSVBFHbb/VBF_Hbb_2017_18/new/master
+3.$ git clone https://github.com/CMSVBFHbb1718/VBF_Hbb_2017_18
 
 
 eddit, add, remove
 
 4.$ #creating/editing <file>
-5.$ git add <file>
-6.$ git commit -m "coment in your change"
-7.$ git remote add proc https://github.com/CMSVBFHbb/VBF_Hbb_2017_18/new/master
-8.$ vim .git/config  
-#edititng
+5.$ git add <file> 
+#or
+6.$ git rm <file>
+7.$ git commit -m "coment in your change"
+8.$ git remote add proc https://github.com/CMSVBFHbb/VBF_Hbb_2017_18
+9.$ vim .git/config  
+#moving
+[remote "proc"]
+        url = https://github.com/CERNCMS18/VBF_Hbb_2017_18
+        fetch = +refs/heads/*:refs/remotes/proc/*
+[remote "origin"]
+        url = https://github.com/CERNCMS18/VBF_Hbb_2017_18/
+        fetch = +refs/heads/*:refs/remotes/origin/*
+#to
 [remote "proc"]
         url = ssh://git@github.com/CERNCMS18/VBF_Hbb_2017_18
-        fetch = +refs/heads/*:refs/remotes/pos/*
+        fetch = +refs/heads/*:refs/remotes/proc/*
 [remote "origin"]
         url = ssh: //git@github.com/CERNCMS18/VBF_Hbb_2017_18/
-        fetch = +refs/heads/*:refs/remotes/tutu/*
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+10.$ git pull
+11.$ git push proc master
