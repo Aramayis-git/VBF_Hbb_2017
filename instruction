@@ -1,14 +1,15 @@
-Instalation
+#Instalation
+1.$ git clone ssh://git@github.com/CMSVBFHbb1718/VBF_Hbb_2017_18
 
-1.$ git clone https://github.com/CMSVBFHbb1718/VBF_Hbb_2017_18
-
-eddit, add, remove
-
-4.$ #creating/editing <file>
-5.$ git add <file> 
+#eddit, add, remove
+2.$ #creating/editing <file>
+3.$ git add <file> 
 #or
-6.$ git rm <file>
+4.$ git rm <file>
 
-7.$ git commit -m "coment in your change"
-10.$ git pull
-11.$ git push 
+#you can see your change 
+5.$ git status -su
+
+6.$ git commit -m "comment in your change"
+7.$ git pull
+8.$ git push 
