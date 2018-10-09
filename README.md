@@ -5,11 +5,11 @@
 
 # Insttruction for git
 
-$ git clone ssh://git@github.com/CMSVBFHbb1718/VBF_Hbb_2017_18
+$ git clone ssh://git@github.com/CMSVBFHbb1718/VBF_Hbb_2017
 
 # eddit, add, remove files
 $ git rm <file>
-you can see your changes by 
+you can see your changes by
 $ git status -su
 
 # add changes
