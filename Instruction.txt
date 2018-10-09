@@ -53,7 +53,7 @@ cd VBF_Hbb_2017/
 
 # Training with TMVA: Jet combination and Signal_vs_Background discrimination 
 # Samples (Root files with NTuples: 7-PT leading jets and  Other variables) are in public place
-cp -r /afs/cern.ch/user/t/tumasyan/public/Preselected_NTuples .
+cp -r /afs/cern.ch/work/t/tumasyan/public/Preselected_NTuples .
 # Where
 Training__Training5perc__.root      is 5% of Data for MVA training
 Training__Training__.root           is full preselected Data ~ 7.73 fb-1
@@ -88,12 +88,12 @@ cd ../Making_Ntuples_For_SigBkgDiscrimination
 
 For data derived approach
 cd Data_Derived/
-cp -r ../TMVA_BJets_Identification/dataset .
+cp -r ../../TMVA_BJets_Identification/dataset .
 root -l Data_Derived.C
 
 For MC derived approach
 cd MC_Derived/
-cp -r ../TMVA_BJets_Identification/dataset .
+cp -r ../../TMVA_BJets_Identification/dataset .
 root -l MC_Derived.C
 
 
